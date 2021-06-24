@@ -24,14 +24,14 @@ class SlideshowFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         val root = inflater.inflate(R.layout.fragment_slideshow, container, false)
-        startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=Hxy8BZGQ5Jo")))
+        startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=MyGPiqaPvGM")))
         imgTY=root.findViewById(R.id.imgTY) as ImageView
         lblLinkTY=root.findViewById(R.id.lblLinkVideo) as TextView
         imgTY?.setOnClickListener{
-            startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=Hxy8BZGQ5Jo")))
+            startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=MyGPiqaPvGM")))
         }
         lblLinkTY?.setOnClickListener {
-            startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=Hxy8BZGQ5Jo")))
+            startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=MyGPiqaPvGM")))
         }
         return root
     }
